@@ -16,11 +16,26 @@ nav{
 nav ul li a{
     color:black; 
 }
-
+p{
+    font-size: 1.4em;
+}
 .hide-background{
     background-color: transparent;
     -webkit-transition: background-color 0.3s ease-in-out 0s; 
     transition: background-color 0.3s ease-in-out 0s; 
+}
+
+.boxed-content{
+    padding: 20px;
+    margin: 20px;
+}
+
+.boxed-content-white{
+    border: 5px solid white;
+}
+
+.boxed-content-black{
+    border: 5px solid black;
 }
 
 .margin-0{
@@ -48,8 +63,21 @@ nav ul li a{
     max-width: 150px;
 }
 
-.parallax-container{
+.icon-2x{
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.parallax-banner{
     height: 100vh !important;
+}
+
+.parallax-page-title{
+    height: 250px !important;
+}
+
+.parallax-section-title{
+    height: 120px !important;
 }
 
 .nav-wrapper{
