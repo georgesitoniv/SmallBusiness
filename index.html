@@ -7,6 +7,7 @@
         <!--Import theme.css-->
         <link type="text/css" rel="stylesheet" href="css/theme.css"  media="screen,projection"/>
         <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animate.css">
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -35,10 +36,19 @@
 
         <header>
             <div class="parallax-container valign-wrapper parallax-banner">
-                <div class="container center-align ">
-                    <h3 class="white-text">Company Name</h3>
-                    <h4 class="white-text">"Let your plans be dark and impenetrable as night, and when you move, fall like a thunderbolt."</h4>
-                    <a href="about.html" class="btn btn-large waves-effect waves-light amber darken-1 black-text">LEARN MORE</a>
+                <div class="container center-align">
+                    <h3 class="white-text" 
+                        data-anijs="if: scroll, on: window, do: fadeInDown animated, before: scrollReveal, after: scrollReveal">
+                        Company Name
+                    </h3>
+                    <h4 class="white-text"
+                        data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal, after: scrollReveal">
+                        "Let your plans be dark and impenetrable as night, and when you move, fall like a thunderbolt."
+                    </h4>
+                    <a href="about.html" class="btn btn-large waves-effect waves-light amber darken-1 black-text"
+                        data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal, after: scrollReveal">
+                        LEARN MORE
+                    </a>
                 </div>
                 <div class="parallax"><img class="responsive-img" src="img/banner.jpg"></div>
             </div>
@@ -46,59 +56,56 @@
         
         <article>
             <section>
-                <div class="cyan center-align padding-10">
+                <div class="cyan center-align padding-10" >
                     <h3 class="white-text">WHAT WE OFFER</h3>
                 </div>
-                <div class="row margin-0">
+                <div class="row margin-0" data-anijs="if: scroll, on: window, do: tada animated, to: .custom-group-content.services, before: scrollReveal, after: scrollReveal">
                     <div class="col s12 m6 l3 custom-group grey lighten-4">
-                        <div class="custom-group-content center-align">
+                        <div class="custom-group-content services center-align ">
                             <img class="responsive-img icon" src="img/Mobile-Diagonal.png">
                             <h5>Service Name</h5>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                         </div>
                     </div>
                     <div class="col s12 m6 l3 custom-group grey lighten-3">
-                        <div class="custom-group-content center-align">
+                        <div class="custom-group-content services center-align">
                             <img class="responsive-img icon" src="img/Pencil.png">
                             <h5>Service Name</h5>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                         </div>
                     </div>
                     <div class="col s12 m6 l3 custom-group grey lighten-4">
-                        <div class="custom-group-content center-align">
+                        <div class="custom-group-content services center-align">
                             <img class="responsive-img icon" src="img/Dynamic.png">
                             <h5>Service Name</h5>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                         </div>
                     </div>
                     <div class="col s12 m6 l3 custom-group grey lighten-3">
-                        <div class="custom-group-content center-align">
+                        <div class="custom-group-content services center-align">
                             <img class="responsive-img icon" src="img/Mobile.png">
                             <h5>Service Name</h5>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                         </div>
                     </div>
                 </div>
                 <div class="grey lighten-2 center-align padding-20">
-                    <a href="services.html" class="btn btn-large waves-effect waves-light amber darken-1 black-text">VIEW MORE SERVICES</a>
+                    <a href="services.html" class="btn btn-large waves-effect waves-light amber darken-1 black-text">
+                        VIEW MORE SERVICES
+                    </a>
                 </div>
             </section>
             <section class="cyan">
                 <div class="center-align padding-10">
                     <h3 class="white-text">TESTIMONIALS</h3>
                 </div>
-                <div class="row margin-0 testimonial-slide">
+                <div class="row margin-0 testimonial-slide" >
                     <div class="col s12 m6 l6 custom-group">
                         <div class="custom-group-content center-align">
                             <h5 class="white-text">JOHN SMITH</h5>
                             <img class="responsive-img icon circle" src="img/George.png">
                             <div class="container arrow_box">
-                                <p>"I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively."</p>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
                             </div>
                         </div>
                     </div>
@@ -107,8 +114,7 @@
                             <h5 class="white-text">JOHN SMITH</h5>
                             <img class="responsive-img icon circle" src="img/George.png">
                             <div class="container arrow_box">
-                            <p>"I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively."</p>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
                             </div>
                         </div>
                     </div>
@@ -119,8 +125,7 @@
                             <h5 class="white-text">JOHN SMITH</h5>
                             <img class="responsive-img icon circle" src="img/Lanz.png">
                             <div class="container arrow_box">
-                                <p>"I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively."</p>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
                             </div>
                         </div>
                     </div>
@@ -129,8 +134,7 @@
                             <h5 class="white-text">JOHN SMITH</h5>
                             <img class="responsive-img icon circle" src="img/Lanz.png">
                             <div class="container arrow_box">
-                            <p>"I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively."</p>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
                             </div> 
                         </div>
                     </div>
@@ -141,8 +145,7 @@
                             <h5 class="white-text">JOHN SMITH</h5>
                             <img class="responsive-img icon circle" src="img/Paul.png">
                             <div class="container arrow_box">
-                                <p>"I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively."</p>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
                             </div>
                         </div>
                     </div>
@@ -151,8 +154,7 @@
                             <h5 class="white-text">JOHN SMITH</h5>
                             <img class="responsive-img icon circle" src="img/Paul.png">
                             <div class="container arrow_box">
-                            <p>"I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively."</p>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
                             </div>
                         </div>
                     </div>
@@ -208,6 +210,8 @@
         <script type="text/javascript" src="js/materialize.js"></script>
         <script type="text/javascript" src="js/theme.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/anijs.js"></script>
+        <script type="text/javascript" src="js/anijs-helper-scrollreveal.js"></script>
         <script type="text/javascript" src="js/george-slider.js"></script>
     </body>
 </html>
