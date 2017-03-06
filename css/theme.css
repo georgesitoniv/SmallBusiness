@@ -17,7 +17,7 @@ nav ul li a{
     color:black; 
 }
 p{
-    font-size: 1.4em;
+    font-size: 1.25em;
 }
 .hide-background{
     background-color: transparent;
@@ -127,6 +127,20 @@ p{
 
 .slide{
     display: none;
+}
+
+.tabs .tab a{
+    color:#0097a7;
+}
+.tabs .tab a:hover,.tabs .tab a.active {
+	background-color:transparent;
+	color:#006064;
+}
+.tabs .tab.disabled a,.tabs .tab.disabled a:hover {
+	color:rgba(102,147,153,0.7);	
+}
+.tabs .indicator {
+	background-color:#006064;
 }
 
 @font-face{

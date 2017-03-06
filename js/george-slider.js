@@ -1,17 +1,19 @@
 
 class Slider {
-    constructor(slideName, indicatorName, hasInterval = false, slideInterval = 5000){
+    constructor(slideName, indicatorName = null, hasInterval = false, slideInterval = 5000){
         this.slides = document.getElementsByClassName(slideName);
         this.indicators = document.getElementsByClassName(indicatorName);
         this.intervalID = null;
         this.hasInterval = hasInterval;
         this.slideInterval = slideInterval;
-        this.UpdateIndicator(this.getSlideIndex());
-        if(hasInterval){
+        if(indicatorName){
             var instance = this;
             $("."+indicatorName).on("click", function(){
                 instance.MoveSlideByIndicator($(this));
             });
+            this.UpdateIndicator(this.getSlideIndex());
+        }
+        if(hasInterval){
             this.SlideIntervalManager(true, slideInterval);
         }
     }

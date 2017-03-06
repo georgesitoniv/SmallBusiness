@@ -3,6 +3,6 @@ $(document).ready(function(){
         closeOnClick: true
     });
     $(".parallax").parallax();
-    
+    $('.modal').modal();
 });
 
