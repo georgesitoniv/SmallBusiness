@@ -7,6 +7,7 @@
         <!--Import theme.css-->
         <link type="text/css" rel="stylesheet" href="css/theme.css"  media="screen,projection"/>
         <link rel="stylesheet" href="css/font-awesome.min.css">
+
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -42,62 +43,44 @@
                 </div>
             </section>
             <section class="grey lighten-3 padding-10 center-align">
-                <h3 class="black-text">WHO ARE WE</h3>
+                <h3 class="black-text">CONTACT US</h3>
             </section>
             <section class="section grey lighten-4">
-                <div class="container">
-                    <div class="center-align">
-                    </div>
-                    <div class = "boxed-content">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="parallax-container valign-wrapper parallax-page-title">
-                    <div class="container center-align ">
-                    </div>
-                    <div class="parallax"><img class="responsive-img" src="img/parallax3.jpg"></div>
-                </div>
-            </section>
-            <section class="cyan lighten-1 padding-10 center-align"> 
-                <h3 class="white-text">OUR MISSION</h3> 
-            </section>
-            <section class="section cyan lighten-2 ">
-                <div class="container">
-                    <div class="center-align">
-
-                    </div>
-                    <div class = "boxed-content white-text">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="parallax-container valign-wrapper parallax-page-title">
-                    <div class="container center-align ">
-                    </div>
-                    <div class="parallax"><img class="responsive-img" src="img/parallax4.jpg"></div>
-                </div>
-            </section>
-            <section class="grey lighten-2 padding-10 center-align">
-                <h3 class="black-text">OUR GOAL</h3>
-            </section>
-            <section class="section grey lighten-3 ">
-                <div class="container">
-                    <div class="center-align">
-                    </div>
-                    <div class = "boxed-content black-text">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+                <div class="boxed-content">
+                    <div class="row">
+                        <div class="col l6 m6 s12">
+                            <div class="input-field">
+                                <input id="subject" type="text" class="validate">
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="name" type="text" class="validate">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="mobile_number" type="email" class="validate">
+                                <label for="mobile_number">Mobile Number</label>
+                            </div>
+                            <div class="input-field">
+                                <textarea id="message" class="materialize-textarea"></textarea>
+                                <label for="message">Message/Inquiry</label>
+                            </div>
+                            <div class="center-align">
+                                <a href="#services-modal-1" class="btn waves-effect waves-light amber darken-1 white-text">
+                                <i class="fa fa-send" aria-hidden="true"></i> SEND
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l6 m6 s12">
+                            <br><br>
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123712.20757341616!2d120.89536179273871!3d14.31105583857927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d5b87c111e25%3A0xab8cb698f840321f!2sDasmari%C3%B1as%2C+Cavite!5e0!3m2!1sen!2sph!4v1488785632936" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -138,6 +121,17 @@
           </div>
         </footer>
 
+        <!-- Modals -->
+        <div id="team-modal-1" class="modal cyan darken-1">
+            <div class="modal-content center-align">
+            <h4 class="white-text">SERVICE NAME</h4>
+            <img class="responsive-img icon circle" src="img/George.png">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div class="modal-footer cyan darken-2">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">CLOSE</a>
+            </div>
+        </div>
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.js"></script>
